@@ -1,8 +1,17 @@
-python -m venv venv
+#!/usr/bin/env bash
 
+set -x
+
+pyenv install --skip-existing 3.10.11
+python -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -m pip freeze > requirements.txt
 
-cat "You can activate your virtual environment with:\n  source venv/bin/activate"
+cat << EOF_MSG
+
+You can activate your virtual environment with:
+  source venv/bin/activate
+
+EOF_MSG
