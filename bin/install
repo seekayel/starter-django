@@ -1,0 +1,8 @@
+python -m venv venv
+
+source venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip freeze > requirements.txt
+
+cat "You can activate your virtual environment with:\n  source venv/bin/activate"
