@@ -3,6 +3,7 @@
 set -x
 
 pyenv install --skip-existing 3.10.11
+pyenv local 3.10.11
 python -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
