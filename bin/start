@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+ROOT_DIR="$(dirname $0)/../"
+
+cd $ROOT_DIR
+
+PYTHONUNBUFFERED=true python myproject/manage.py runserver
